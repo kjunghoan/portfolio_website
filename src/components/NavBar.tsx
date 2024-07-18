@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 // - maybe change font ???
 // upload a picture for side nav
 // add socials (probably import logos/sgvs)
+// set state for mobile
 
 export default function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
