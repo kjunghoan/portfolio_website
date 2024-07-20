@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 
 export default function NavBar() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const navBarItems = [ 
+  const navBarItems = [
     {
       title: "HOME",
       route: "/",
@@ -21,28 +21,28 @@ export default function NavBar() {
       title: "ABOUT ME",
       route: "/aboutMe",
     },
-    // {
-    //   title: "Projects",
-    //   route: "/projects",
-    // },
-    // {
-    //   title: "Contact Me",
-    //   route: "/contact",
-    // },
+    {
+      title: "Projects",
+      route: "/projects",
+    },
+    {
+      title: "Contact Me",
+      route: "/contactMe",
+    },
   ];
 
   return (
     <div className="fixed w-64 bg-gray-800 text-white h-screen left-0 top-0 overflow-y-auto">
       <div className="p-4">
         <div id="profilePicture">
-          <img id="make this round, relative size and remove if the screen too small"/>
-          <h2 className="text-2xl font-bold- mb-4">Jung Hoan Kim</h2> 
+          <img id="make this round, relative size and remove if the screen too small" />
+          <h2 className="text-2xl font-bold- mb-4">Jung Hoan Kim</h2>
         </div>
         <nav>
           <ul>
-            {navBarItems.map((nbi)=> {
+            {navBarItems.map((nbi) => {
               return (
-                <Link to={nbi.route}  className="mb-2 hover:text-gray-300" key={navBarItems.indexOf(nbi)} >
+                <Link to={nbi.route} className="mb-2 hover:text-gray-300" key={navBarItems.indexOf(nbi)} >
                   <li>{nbi.title}</li>
                 </Link>
               )
@@ -53,6 +53,12 @@ export default function NavBar() {
 
       <div className="absolute bottom-4 left-4">
         <h1>LIST OF SOCIALS</h1>
+        <ul>
+          <h1>LinkedIn</h1>
+          <h1>Github</h1>
+          <h1>Reddit</h1>
+          <h1>Medium</h1>
+        </ul>
       </div>
     </div>
   )

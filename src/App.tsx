@@ -1,7 +1,9 @@
 import NavBar from "./components/NavBar";
 import { Route, Routes } from "react-router-dom"
 import AboutMe from "./pages/AboutMe"
-
+import ContactMe from "./pages/ContactMe"
+import Home from "./pages/Home"
+import Projects from "./pages/Projects"
 //TODO:
 // GLOBAL TODOS:
 // [] somehow make the pages look retro / anolog
@@ -23,8 +25,10 @@ export default function App() {
       <NavBar/>
       <div className="sm:pl-64">
         <Routes>
-          <Route path="/" element={<AboutMe/>}/>
+          <Route path="/" element={<Home/>}/>
           <Route path="/aboutMe" element={<AboutMe/>}/>
+          <Route path="/contactMe" element={<ContactMe/>}/>
+          <Route path="/projects" element={<Projects/>}/>
         </Routes>
       </div>
 
