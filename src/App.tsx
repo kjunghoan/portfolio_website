@@ -7,7 +7,7 @@ import Projects from "./pages/Projects"
 //TODO:
 // GLOBAL TODOS:
 // [] somehow make the pages look retro / anolog
-//  [] cardstock-y componants think vintage fujifilm pictures with minimal colour correct
+//  [] cardstock-y components think vintage fujifilm pictures with minimal colour correct
 //  [] add personality
 // ------------------------------------------
 // [] add vim motions to the pages 
@@ -22,13 +22,13 @@ export default function App() {
 
   return (
     <div>
-      <NavBar/>
+      <NavBar />
       <div className="sm:pl-64">
         <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/aboutMe" element={<AboutMe/>}/>
-          <Route path="/contactMe" element={<ContactMe/>}/>
-          <Route path="/projects" element={<Projects/>}/>
+          <Route path="/" element={<Home />} />
+          <Route path="/aboutMe" element={<AboutMe />} />
+          <Route path="/contactMe" element={<ContactMe />} />
+          <Route path="/projects" element={<Projects />} />
         </Routes>
       </div>
 
